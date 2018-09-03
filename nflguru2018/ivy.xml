@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+<ivy-module version="2.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://ant.apache.org/ivy/schemas/ivy.xsd">
+    <info
+        organisation="halobyte"
+        module="prognos"
+        revision="1.0.0"
+        status="integration">
+	</info>
+	<dependencies>
+		<!-- https://mvnrepository.com/artifact/org.jsoup/jsoup -->
+		<dependency org="org.jsoup" name="jsoup" rev="1.10.3"/>
+		<!-- https://mvnrepository.com/artifact/net.sourceforge.htmlunit/htmlunit -->
+		<dependency org="net.sourceforge.htmlunit" name="htmlunit" rev="2.27"/>
+		<!-- https://mvnrepository.com/artifact/commons-io/commons-io -->
+		<dependency org="commons-io" name="commons-io" rev="2.5"/>
+		<!-- https://mvnrepository.com/artifact/com.google.code.gson/gson -->
+		<dependency org="com.google.code.gson" name="gson" rev="2.8.2"/>
+	</dependencies>
+</ivy-module>

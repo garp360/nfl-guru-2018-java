@@ -1,0 +1,354 @@
+[
+  {
+    "home": "PHI",
+    "away": "ATL",
+    "gameDay": {
+      "year": 2018,
+      "month": 9,
+      "day": 6
+    },
+    "gameTime": {
+      "hour": 20,
+      "minute": 20,
+      "second": 0,
+      "nano": 0
+    },
+    "homeScore": -1,
+    "awayScore": -1,
+    "game": 1,
+    "week": 1,
+    "season": 2018,
+    "homeSpread": -2.5,
+    "awaySpread": 2.5
+  },
+  {
+    "home": "BAL",
+    "away": "BUF",
+    "gameDay": {
+      "year": 2018,
+      "month": 9,
+      "day": 9
+    },
+    "gameTime": {
+      "hour": 13,
+      "minute": 0,
+      "second": 0,
+      "nano": 0
+    },
+    "homeScore": -1,
+    "awayScore": -1,
+    "game": 2,
+    "week": 1,
+    "season": 2018,
+    "homeSpread": -7.5,
+    "awaySpread": 7.5
+  },
+  {
+    "home": "CLE",
+    "away": "PIT",
+    "gameDay": {
+      "year": 2018,
+      "month": 9,
+      "day": 9
+    },
+    "gameTime": {
+      "hour": 13,
+      "minute": 0,
+      "second": 0,
+      "nano": 0
+    },
+    "homeScore": -1,
+    "awayScore": -1,
+    "game": 3,
+    "week": 1,
+    "season": 2018,
+    "homeSpread": 5.5,
+    "awaySpread": -5.5
+  },
+  {
+    "home": "IND",
+    "away": "CIN",
+    "gameDay": {
+      "year": 2018,
+      "month": 9,
+      "day": 9
+    },
+    "gameTime": {
+      "hour": 13,
+      "minute": 0,
+      "second": 0,
+      "nano": 0
+    },
+    "homeScore": -1,
+    "awayScore": -1,
+    "game": 4,
+    "week": 1,
+    "season": 2018,
+    "homeSpread": -2.5,
+    "awaySpread": 2.5
+  },
+  {
+    "home": "MIA",
+    "away": "TEN",
+    "gameDay": {
+      "year": 2018,
+      "month": 9,
+      "day": 9
+    },
+    "gameTime": {
+      "hour": 13,
+      "minute": 0,
+      "second": 0,
+      "nano": 0
+    },
+    "homeScore": -1,
+    "awayScore": -1,
+    "game": 5,
+    "week": 1,
+    "season": 2018,
+    "homeSpread": 1.5,
+    "awaySpread": -1.5
+  },
+  {
+    "home": "MIN",
+    "away": "SF",
+    "gameDay": {
+      "year": 2018,
+      "month": 9,
+      "day": 9
+    },
+    "gameTime": {
+      "hour": 13,
+      "minute": 0,
+      "second": 0,
+      "nano": 0
+    },
+    "homeScore": -1,
+    "awayScore": -1,
+    "game": 6,
+    "week": 1,
+    "season": 2018,
+    "homeSpread": -6.5,
+    "awaySpread": 6.5
+  },
+  {
+    "home": "NE",
+    "away": "HOU",
+    "gameDay": {
+      "year": 2018,
+      "month": 9,
+      "day": 9
+    },
+    "gameTime": {
+      "hour": 13,
+      "minute": 0,
+      "second": 0,
+      "nano": 0
+    },
+    "homeScore": -1,
+    "awayScore": -1,
+    "game": 7,
+    "week": 1,
+    "season": 2018,
+    "homeSpread": -6.5,
+    "awaySpread": 6.5
+  },
+  {
+    "home": "NO",
+    "away": "TB",
+    "gameDay": {
+      "year": 2018,
+      "month": 9,
+      "day": 9
+    },
+    "gameTime": {
+      "hour": 13,
+      "minute": 0,
+      "second": 0,
+      "nano": 0
+    },
+    "homeScore": -1,
+    "awayScore": -1,
+    "game": 8,
+    "week": 1,
+    "season": 2018,
+    "homeSpread": -9.5,
+    "awaySpread": 9.5
+  },
+  {
+    "home": "NYG",
+    "away": "JAC",
+    "gameDay": {
+      "year": 2018,
+      "month": 9,
+      "day": 9
+    },
+    "gameTime": {
+      "hour": 13,
+      "minute": 0,
+      "second": 0,
+      "nano": 0
+    },
+    "homeScore": -1,
+    "awayScore": -1,
+    "game": 9,
+    "week": 1,
+    "season": 2018,
+    "homeSpread": 3.5,
+    "awaySpread": -3.5
+  },
+  {
+    "home": "LAC",
+    "away": "KC",
+    "gameDay": {
+      "year": 2018,
+      "month": 9,
+      "day": 9
+    },
+    "gameTime": {
+      "hour": 16,
+      "minute": 5,
+      "second": 0,
+      "nano": 0
+    },
+    "homeScore": -1,
+    "awayScore": -1,
+    "game": 10,
+    "week": 1,
+    "season": 2018,
+    "homeSpread": -3.5,
+    "awaySpread": 3.5
+  },
+  {
+    "home": "ARI",
+    "away": "WAS",
+    "gameDay": {
+      "year": 2018,
+      "month": 9,
+      "day": 9
+    },
+    "gameTime": {
+      "hour": 16,
+      "minute": 25,
+      "second": 0,
+      "nano": 0
+    },
+    "homeScore": -1,
+    "awayScore": -1,
+    "game": 11,
+    "week": 1,
+    "season": 2018,
+    "homeSpread": -0.5,
+    "awaySpread": 0.5
+  },
+  {
+    "home": "CAR",
+    "away": "DAL",
+    "gameDay": {
+      "year": 2018,
+      "month": 9,
+      "day": 9
+    },
+    "gameTime": {
+      "hour": 16,
+      "minute": 25,
+      "second": 0,
+      "nano": 0
+    },
+    "homeScore": -1,
+    "awayScore": -1,
+    "game": 12,
+    "week": 1,
+    "season": 2018,
+    "homeSpread": -2.5,
+    "awaySpread": 2.5
+  },
+  {
+    "home": "DEN",
+    "away": "SEA",
+    "gameDay": {
+      "year": 2018,
+      "month": 9,
+      "day": 9
+    },
+    "gameTime": {
+      "hour": 16,
+      "minute": 25,
+      "second": 0,
+      "nano": 0
+    },
+    "homeScore": -1,
+    "awayScore": -1,
+    "game": 13,
+    "week": 1,
+    "season": 2018,
+    "homeSpread": -2.5,
+    "awaySpread": 2.5
+  },
+  {
+    "home": "GB",
+    "away": "CHI",
+    "gameDay": {
+      "year": 2018,
+      "month": 9,
+      "day": 9
+    },
+    "gameTime": {
+      "hour": 20,
+      "minute": 20,
+      "second": 0,
+      "nano": 0
+    },
+    "homeScore": -1,
+    "awayScore": -1,
+    "game": 14,
+    "week": 1,
+    "season": 2018,
+    "homeSpread": -7.5,
+    "awaySpread": 7.5
+  },
+  {
+    "home": "DET",
+    "away": "NYJ",
+    "gameDay": {
+      "year": 2018,
+      "month": 9,
+      "day": 10
+    },
+    "gameTime": {
+      "hour": 19,
+      "minute": 10,
+      "second": 0,
+      "nano": 0
+    },
+    "homeScore": -1,
+    "awayScore": -1,
+    "game": 15,
+    "week": 1,
+    "season": 2018,
+    "homeSpread": -6.5,
+    "awaySpread": 6.5
+  },
+  {
+    "home": "OAK",
+    "away": "LAR",
+    "gameDay": {
+      "year": 2018,
+      "month": 9,
+      "day": 10
+    },
+    "gameTime": {
+      "hour": 22,
+      "minute": 20,
+      "second": 0,
+      "nano": 0
+    },
+    "homeScore": -1,
+    "awayScore": -1,
+    "game": 16,
+    "week": 1,
+    "season": 2018,
+    "homeSpread": 4.5,
+    "awaySpread": -4.5
+  }
+]

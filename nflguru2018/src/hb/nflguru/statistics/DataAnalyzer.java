@@ -27,12 +27,20 @@ public class DataAnalyzer
 
 	public static void main(String[] args)
 	{
-		DataAnalyzer dataAnalyzer = new DataAnalyzer(new DataLoader("C:\\Users\\win764\\git\\nfl-guru-2018-java\\nflguru2018\\data\\guru10YearData.json"));
+		//DataAnalyzer dataAnalyzer = new DataAnalyzer(new DataLoader("C:\\Users\\win764\\git\\nfl-guru-2018-java\\nflguru2018\\data\\guru10YearData.json"));
+		DataAnalyzer dataAnalyzer = new DataAnalyzer(new DataLoader("/Users/garthpidcock/git/nflguru2018/nflguru2018/data/guru10YearData.json"));
 		Map<String, StatBundle> stats = dataAnalyzer.statsAgainstOpponent(1);
 		//dataAnalyzer.export(stats);
 		dataAnalyzer.verify(DataLoader.MAX_SEASON, 1);
+		
+		dataAnalyzer.loadMasseyData();
 	}
 	
+	private void loadMasseyData()
+	{
+		dataLoader.getMasseyPredictions();
+	}
+
 	private void export(Map<String, StatBundle> stats)
 	{
 
@@ -133,12 +141,12 @@ public class DataAnalyzer
 			Double avgPtsScoredHeadToHeadSituationalHome = games.stream().filter(g -> g.getHomeName().toLowerCase().equals(homeTeam.toLowerCase()) && g.getVisitorName().toLowerCase().equals(visitingTeam.toLowerCase())).collect(Collectors.averagingInt(p -> p.getHomeScore()));
 
 			// --- Overall ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------	
-			long homeGamesOverallVisitor = games.stream().filter(g -> g.getHomeName().toLowerCase().equals(visitingTeam.toLowerCase())).count();
-			long awayGamesOverallVisitor = games.stream().filter(g -> g.getVisitorName().toLowerCase().equals(visitingTeam.toLowerCase())).count();
-			Double avgPtsScoredHomeOverallVisitor = games.stream().filter(g -> g.getHomeName().toLowerCase().equals(visitingTeam.toLowerCase())).collect(Collectors.averagingInt(p -> p.getHomeScore()));
-			Double avgPtsAllowedHomeOverallVisitor = games.stream().filter(g -> g.getHomeName().toLowerCase().equals(visitingTeam.toLowerCase())).collect(Collectors.averagingInt(p -> p.getVisitorScore()));
-			Double avgPtsScoredAwayOverallVisitor = games.stream().filter(g -> g.getVisitorName().toLowerCase().equals(visitingTeam.toLowerCase())).collect(Collectors.averagingInt(p -> p.getVisitorScore()));
-			Double avgPtsAllowedAwayOverallVisitor = games.stream().filter(g -> g.getVisitorName().toLowerCase().equals(visitingTeam.toLowerCase())).collect(Collectors.averagingInt(p -> p.getHomeScore()));
+			long homeGamesOverallVisitor = games.stream().filter(g -> g.getHomeName().toLowerCase().equals(visitingTeam.toLowerCase())).limit(25L).count();
+			long awayGamesOverallVisitor = games.stream().filter(g -> g.getVisitorName().toLowerCase().equals(visitingTeam.toLowerCase())).limit(25L).count();
+			Double avgPtsScoredHomeOverallVisitor = games.stream().filter(g -> g.getHomeName().toLowerCase().equals(visitingTeam.toLowerCase())).limit(25L).collect(Collectors.averagingInt(p -> p.getHomeScore()));
+			Double avgPtsAllowedHomeOverallVisitor = games.stream().filter(g -> g.getHomeName().toLowerCase().equals(visitingTeam.toLowerCase())).limit(25L).collect(Collectors.averagingInt(p -> p.getVisitorScore()));
+			Double avgPtsScoredAwayOverallVisitor = games.stream().filter(g -> g.getVisitorName().toLowerCase().equals(visitingTeam.toLowerCase())).limit(25L).collect(Collectors.averagingInt(p -> p.getVisitorScore()));
+			Double avgPtsAllowedAwayOverallVisitor = games.stream().filter(g -> g.getVisitorName().toLowerCase().equals(visitingTeam.toLowerCase())).limit(25L).collect(Collectors.averagingInt(p -> p.getHomeScore()));
 	
 			Double avgPtsScoredHomeOverallLast10Visitor = games.stream().filter(g -> g.getHomeName().toLowerCase().equals(visitingTeam.toLowerCase())).sorted((s1, s2) -> {
 		        return s2.getId().compareTo(s1.getId());
@@ -166,12 +174,12 @@ public class DataAnalyzer
 		        return s2.getId().compareTo(s1.getId());
 		    }).limit(3L).collect(Collectors.averagingInt(p -> p.getHomeScore()));
 			
-			long homeGamesOverallHome = games.stream().filter(g -> g.getHomeName().toLowerCase().equals(homeTeam.toLowerCase())).count();
-			long awayGamesOverallHome = games.stream().filter(g -> g.getVisitorName().toLowerCase().equals(homeTeam.toLowerCase())).count();
-			Double avgPtsScoredHomeOverallHome = games.stream().filter(g -> g.getHomeName().toLowerCase().equals(homeTeam.toLowerCase())).collect(Collectors.averagingInt(p -> p.getHomeScore()));
-			Double avgPtsAllowedHomeOverallHome = games.stream().filter(g -> g.getHomeName().toLowerCase().equals(homeTeam.toLowerCase())).collect(Collectors.averagingInt(p -> p.getVisitorScore()));
-			Double avgPtsScoredAwayOverallHome = games.stream().filter(g -> g.getVisitorName().toLowerCase().equals(homeTeam.toLowerCase())).collect(Collectors.averagingInt(p -> p.getVisitorScore()));
-			Double avgPtsAllowedAwayOverallHome = games.stream().filter(g -> g.getVisitorName().toLowerCase().equals(homeTeam.toLowerCase())).collect(Collectors.averagingInt(p -> p.getHomeScore()));
+			long homeGamesOverallHome = games.stream().filter(g -> g.getHomeName().toLowerCase().equals(homeTeam.toLowerCase())).limit(25L).count();
+			long awayGamesOverallHome = games.stream().filter(g -> g.getVisitorName().toLowerCase().equals(homeTeam.toLowerCase())).limit(25L).count();
+			Double avgPtsScoredHomeOverallHome = games.stream().filter(g -> g.getHomeName().toLowerCase().equals(homeTeam.toLowerCase())).limit(25L).collect(Collectors.averagingInt(p -> p.getHomeScore()));
+			Double avgPtsAllowedHomeOverallHome = games.stream().filter(g -> g.getHomeName().toLowerCase().equals(homeTeam.toLowerCase())).limit(25L).collect(Collectors.averagingInt(p -> p.getVisitorScore()));
+			Double avgPtsScoredAwayOverallHome = games.stream().filter(g -> g.getVisitorName().toLowerCase().equals(homeTeam.toLowerCase())).limit(25L).collect(Collectors.averagingInt(p -> p.getVisitorScore()));
+			Double avgPtsAllowedAwayOverallHome = games.stream().filter(g -> g.getVisitorName().toLowerCase().equals(homeTeam.toLowerCase())).limit(25L).collect(Collectors.averagingInt(p -> p.getHomeScore()));
 	
 			Double avgPtsScoredHomeOverallLast10Home = games.stream().filter(g -> g.getHomeName().toLowerCase().equals(homeTeam.toLowerCase())).sorted((s1, s2) -> {
 		        return s2.getId().compareTo(s1.getId());

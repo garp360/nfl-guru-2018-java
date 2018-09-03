@@ -17,8 +17,6 @@ import org.json.XML;
 
 import com.google.gson.Gson;
 
-import nflguru2018.domain.Matchup;
-
 public class StatsBuilder
 {
 	public static int PRETTY_PRINT_INDENT_FACTOR = 4;
@@ -26,23 +24,23 @@ public class StatsBuilder
 	public static void main(String[] args)
 	{
 		StatsBuilder builder = new StatsBuilder();
-		Map<Integer,Map<Integer,List<Matchup>>> seasons = builder.getData(10);
+		Map<Integer,Map<Integer,List<JsonImportObject>>> seasons = builder.getData(10);
 		Gson gson = new Gson();
 		String json = gson.toJson(seasons);
 		System.out.println(json);
 	}
 
-	private Map<Integer, Map<Integer, List<Matchup>>> getData(int yearsBack)
+	private Map<Integer, Map<Integer, List<JsonImportObject>>> getData(int yearsBack)
 	{
-		Map<Integer,Map<Integer,List<Matchup>>> seasons = new HashMap<>();
+		Map<Integer,Map<Integer,List<JsonImportObject>>> seasons = new HashMap<>();
 		int year = Calendar.getInstance().get(Calendar.YEAR);
 		
 		for(int season = year-yearsBack; season<=year; season++) 
 		{
-			Map<Integer,List<Matchup>> weeks = new HashMap<>();
+			Map<Integer,List<JsonImportObject>> weeks = new HashMap<>();
 			for (int week = 1; week <= 17; week++) 
 			{
-				List<Matchup> matchups = getMatchups( season, week );
+				List<JsonImportObject> matchups = getMatchups( season, week );
 				weeks.put(week, matchups);
 			}
 			seasons.put(season, weeks);
@@ -50,10 +48,10 @@ public class StatsBuilder
 		return seasons;
 	}
 
-	private List<Matchup> getMatchups(int season, int week)
+	private List<JsonImportObject> getMatchups(int season, int week)
 	{
 		String url = "http://www.nfl.com/ajax/scorestrip?season=" + season + "&seasonType=REG&week=" + week;
-		List<Matchup> matchups = new ArrayList<>();
+		List<JsonImportObject> matchups = new ArrayList<>();
 		try
 		{
 			URL matchupUrl = new URL(url);
@@ -72,7 +70,7 @@ public class StatsBuilder
 					json = json.replace("}}", "}");
 
 					Gson gson = new Gson();
-					Matchup m = gson.fromJson(json.toString(), Matchup.class);
+					JsonImportObject m = gson.fromJson(json.toString(), JsonImportObject.class);
 					matchups.add(m);
 				}
 			}

@@ -1,6 +1,6 @@
-package nflguru2018.domain;
+package nflguru2018;
 
-public class Matchup
+public class JsonImportObject
 {
 	private String id;
 	private String gsis;
