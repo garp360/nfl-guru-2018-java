@@ -1,4 +1,4 @@
-package nflguru2018;
+package hb.nflguru.utils;
 
 public enum NFLTeam
 {		

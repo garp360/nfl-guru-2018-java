@@ -51,9 +51,37 @@ public class CurrentSeasonResultsImporter extends BaseImporter
 			matchup.setHomeSpread(spreads.get(home));
 			matchup.setAwaySpread(spreads.get(away));
 			
-			Integer headToHeadGamesPlayed = dataLoader.getSituationalHeadToHeadGamesPlayed(home, away);
-			Integer headToHeadAwayPointsScored = dataLoader.getSituationalHeadToHeadPtsScoredAway(home, away);
-			Integer headToHeadHomePointsScored = dataLoader.getSituationalHeadToHeadPtsScoredHome(home, away);
+			matchup.setHead2HeadGamesPlayed(dataLoader.getSituationalHeadToHeadGamesPlayed(home, away));
+			
+			matchup.setHomeHead2HeadPtsScored(dataLoader.getSituationalHeadToHeadPtsScoredHome(home, away));
+			matchup.setHomeSituationalPtsScoredLast10(dataLoader.getSituationalPtsScoredHome(home, 10L));
+			matchup.setHomeSituationalPtsScoredLast5(dataLoader.getSituationalPtsScoredHome(home, 5L));
+			matchup.setHomeSituationalPtsScoredLast3(dataLoader.getSituationalPtsScoredHome(home, 3L));
+			matchup.setHomeOverallPtsScoredLast10(dataLoader.getOverallPtsScored(home, 10L));
+			matchup.setHomeOverallPtsScoredLast5(dataLoader.getOverallPtsScored(home, 5L));
+			matchup.setHomeOverallPtsScoredLast3(dataLoader.getOverallPtsScored(home, 3L));
+			
+			matchup.setHomeSituationalPtsAllowedLast10(dataLoader.getSituationalPtsAllowedHome(home, 10L));
+			matchup.setHomeSituationalPtsAllowedLast5(dataLoader.getSituationalPtsAllowedHome(home, 5L));
+			matchup.setHomeSituationalPtsAllowedLast3(dataLoader.getSituationalPtsAllowedHome(home, 3L));
+			matchup.setHomeOverallPtsAllowedLast10(dataLoader.getOverallPtsAllowed(home, 10L));
+			matchup.setHomeOverallPtsAllowedLast5(dataLoader.getOverallPtsAllowed(home, 5L));
+			matchup.setHomeOverallPtsAllowedLast3(dataLoader.getOverallPtsAllowed(home, 3L));
+
+			matchup.setAwayHead2HeadPtsScored(dataLoader.getSituationalHeadToHeadPtsScoredAway(home, away));
+			matchup.setAwaySituationalPtsScoredLast10(dataLoader.getSituationalPtsScoredAway(away, 10L));
+			matchup.setAwaySituationalPtsScoredLast5(dataLoader.getSituationalPtsScoredAway(away, 5L));
+			matchup.setAwaySituationalPtsScoredLast3(dataLoader.getSituationalPtsScoredAway(away, 3L));
+			matchup.setAwayOverallPtsScoredLast10(dataLoader.getOverallPtsScored(away, 10L));
+			matchup.setAwayOverallPtsScoredLast5(dataLoader.getOverallPtsScored(away, 5L));
+			matchup.setAwayOverallPtsScoredLast3(dataLoader.getOverallPtsScored(away, 3L));
+			
+			matchup.setAwaySituationalPtsAllowedLast10(dataLoader.getSituationalPtsAllowedAway(away, 10L));
+			matchup.setAwaySituationalPtsAllowedLast5(dataLoader.getSituationalPtsAllowedAway(away, 5L));
+			matchup.setAwaySituationalPtsAllowedLast3(dataLoader.getSituationalPtsAllowedAway(away, 3L));
+			matchup.setAwayOverallPtsAllowedLast10(dataLoader.getOverallPtsAllowed(away, 10L));
+			matchup.setAwayOverallPtsAllowedLast5(dataLoader.getOverallPtsAllowed(away, 5L));
+			matchup.setAwayOverallPtsAllowedLast3(dataLoader.getOverallPtsAllowed(away, 3L));
 		}
 
 		String output = gson.toJson(matchups);

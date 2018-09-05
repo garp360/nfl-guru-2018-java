@@ -66,6 +66,14 @@ public class DataLoader
 		return ptsScored.intValue();
 	}
 	
+	public Integer getSituationalPtsAllowedHome(String team, long limit)
+	{
+		Double pts = games.stream().filter(g -> g.getHome().name().toLowerCase().equals(team.toLowerCase())).sorted((s1, s2) -> {
+			return s2.getGameDay().compareTo(s1.getGameDay());
+		}).limit(limit).collect(Collectors.averagingInt(p -> p.getAwayScore()));
+		return pts.intValue();
+	}
+	
 	public Integer getSituationalPtsScoredAway(String team, long limit)
 	{
 		Double ptsScored = games.stream().filter(g -> g.getAway().name().toLowerCase().equals(team.toLowerCase())).sorted((s1, s2) -> {
@@ -74,12 +82,38 @@ public class DataLoader
 		return ptsScored.intValue();
 	}
 	
-	public Integer getOverallPtsScored(String team, long limit)
+	public Integer getSituationalPtsAllowedAway(String team, long limit)
 	{
-		Double ptsScored = games.stream().filter(g -> g.getHome().name().toLowerCase().equals(team.toLowerCase()) || g.getAway().name().toLowerCase().equals(team.toLowerCase())).sorted((s1, s2) -> {
+		Double pts = games.stream().filter(g -> g.getAway().name().toLowerCase().equals(team.toLowerCase())).sorted((s1, s2) -> {
 			return s2.getGameDay().compareTo(s1.getGameDay());
 		}).limit(limit).collect(Collectors.averagingInt(p -> p.getHomeScore()));
-		return ptsScored.intValue();
+		return pts.intValue();
 	}
 	
+	public Integer getOverallPtsScored(String team, long limit)
+	{
+		List<Matchup> lastXGamesAsHome = games.stream().filter(g -> g.getHome().name().toLowerCase().equals(team.toLowerCase())).sorted((s1, s2) -> {
+			return s2.getGameDay().compareTo(s1.getGameDay());
+		}).limit(limit).collect(Collectors.toList());
+		Double ptsScoredHome = lastXGamesAsHome.stream().collect(Collectors.averagingInt(p -> p.getHomeScore()));
+		
+		Double ptsScoredAway = games.stream().filter(g -> g.getAway().name().toLowerCase().equals(team.toLowerCase())).sorted((s1, s2) -> {
+			return s2.getGameDay().compareTo(s1.getGameDay());
+		}).limit(limit).collect(Collectors.averagingInt(p -> p.getAwayScore()));
+		
+		return Double.valueOf((ptsScoredHome + ptsScoredAway)/2).intValue();
+	}
+	
+	public Integer getOverallPtsAllowed(String team, long limit)
+	{
+		Double ptsAllowedHome = games.stream().filter(g -> g.getHome().name().toLowerCase().equals(team.toLowerCase())).sorted((s1, s2) -> {
+			return s2.getGameDay().compareTo(s1.getGameDay());
+		}).limit(limit).collect(Collectors.averagingInt(p -> p.getAwayScore()));
+		
+		Double ptsAllowedAway = games.stream().filter(g -> g.getAway().name().toLowerCase().equals(team.toLowerCase())).sorted((s1, s2) -> {
+			return s2.getGameDay().compareTo(s1.getGameDay());
+		}).limit(limit).collect(Collectors.averagingInt(p -> p.getHomeScore()));
+		
+		return Double.valueOf((ptsAllowedHome + ptsAllowedAway)/2).intValue();
+	}
 }

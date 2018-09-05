@@ -6,6 +6,8 @@ import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
 
+import org.apache.commons.lang3.StringUtils;
+
 import com.gargoylesoftware.htmlunit.WebClient;
 import com.gargoylesoftware.htmlunit.html.HtmlElement;
 import com.gargoylesoftware.htmlunit.html.HtmlForm;
@@ -14,7 +16,7 @@ import com.gargoylesoftware.htmlunit.html.HtmlPasswordInput;
 import com.gargoylesoftware.htmlunit.html.HtmlTextInput;
 import com.gargoylesoftware.htmlunit.javascript.host.event.Event;
 
-import nflguru2018.NFLTeam;
+import hb.nflguru.utils.NFLTeam;
 
 public class CurrentSpreadsImporter
 {
@@ -46,11 +48,18 @@ public class CurrentSpreadsImporter
 				String team = title.split("\\(")[0].trim();
 				team = NFLTeam.convertOfficeFootballPoolNameToAbbr(team.toUpperCase());
 				String operand = title.split("\\)")[1].trim().substring(0, 1);
-				String spreadString = title.split("\\)")[1].trim().substring(1);
+				String spreadString = title.split("\\)")[1].trim().substring(1).trim();
 				
-				BigDecimal spread = new BigDecimal(spreadString);
+				BigDecimal spread = BigDecimal.ZERO;
+				try {
+					spread = new BigDecimal(spreadString);
+				} catch( Exception e) {
+					spread = BigDecimal.ZERO;
+				}
 				
-				if(operand.equalsIgnoreCase("-")) {
+				
+				
+				if(operand != null && operand.equalsIgnoreCase("-")) {
 					spread = spread.negate();
 				}
 				
