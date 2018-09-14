@@ -31,7 +31,7 @@ public class DataImporterTest
 {
 
 	@Test
-	public void test()
+	public void DataImporterTest_TEST()
 	{
 		
 		// Files.write(Paths.get("/Users/garthpidcock/Development/Workspaces/guru17/nflguru2018/data/schedule2018.json"), jsonPrettyPrintString.getBytes());
@@ -65,8 +65,6 @@ public class DataImporterTest
 			int season = gms.getInt("y");
 			
 			JSONArray games = gms.getJSONArray("g");
-			
-
 			
 			for (int i = 0; i < games.length(); i++)
 			{

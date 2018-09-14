@@ -29,9 +29,9 @@ import hb.nflguru.utils.ScheduleUtils;
 public abstract class BaseImporter
 {
 	protected static final String NFL_SCORESTRIP_JSON_URL_TEMPLATE = "http://www.nfl.com/ajax/scorestrip?season=%s&seasonType=REG&week=%s";
-	protected static final int MIN_SEASON = 2018;
 	protected static final int WEEKS_IN_REGULAR_SEASON = 17;
 	protected Gson gson;
+	
 
 	protected void initialize()
 	{
@@ -43,16 +43,16 @@ public abstract class BaseImporter
 		System.out.println("Initializing ...");
 	}
 
-	protected List<Matchup> getMatchups()
+	protected List<Matchup> getHistoricalMatchups()
 	{
 		List<Matchup> matchups = new ArrayList<>();
 
-		int maxSeason = ScheduleUtils.getCurrentSeason();
-		for (int season = MIN_SEASON; season <= maxSeason; season++)
+		int currentSeason = ScheduleUtils.getCurrentSeason();
+		for (int season = 2008; season <= currentSeason; season++)
 		{
 			for (int week = 1; week <= WEEKS_IN_REGULAR_SEASON; week++)
 			{
-				System.out.println("Loading games for season=" + season + " week=" + week);
+				
 				String importUrl = getImportUrl(season, week);
 				String gamesForWeekAsJson;
 				try
@@ -71,15 +71,14 @@ public abstract class BaseImporter
 		return matchups;
 	}
 	
-	protected List<Matchup> getMatchups(int s)
+	protected List<Matchup> getMatchupsForCurrentWeek( )
 	{
 		List<Matchup> matchups = new ArrayList<>();
-
-		for (int season = s; season <= s; season++)
+		int currentSeason = ScheduleUtils.getCurrentSeason();
+		for (int season = currentSeason; season <= currentSeason; season++)
 		{
-			for (int week = 1; week <= ScheduleUtils.getCurrentWeek(); week++)
+			for (int week = ScheduleUtils.getCurrentWeek(); week <= ScheduleUtils.getCurrentWeek(); week++)
 			{
-				System.out.println("Loading games for season=" + season + " week=" + week);
 				String importUrl = getImportUrl(season, week);
 				String gamesForWeekAsJson;
 				try
@@ -115,6 +114,9 @@ public abstract class BaseImporter
 
 			if (g.getString("q").equals("F"))
 			{
+				System.out.println("Loading games for season=" + season + " week=" + week);
+				
+				
 				g.put("game", i + 1);
 				g.put("week", week);
 				g.put("season", season);

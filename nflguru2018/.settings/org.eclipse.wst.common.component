@@ -2,5 +2,6 @@
     <wb-module deploy-name="nflguru2018">
         <wb-resource deploy-path="/" source-path="/src"/>
         <wb-resource deploy-path="/" source-path="/test"/>
+        <wb-resource deploy-path="/" source-path="/data"/>
     </wb-module>
 </project-modules>

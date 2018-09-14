@@ -1,25 +1,24 @@
-package hb.nflguru.predictor;
+package hb.nflguru.statistics.model;
 
 import java.math.BigDecimal;
 
 import org.apache.commons.lang3.StringUtils;
 
-import hb.nflguru.statistics.model.Matchup;
 import hb.nflguru.utils.NFLTeam;
 
-public class Prediction
+public class SimplePrediction
 {
-	private final Matchup matchup;
+	protected final Matchup matchup;
 
-	private Integer predictedHomeScore;
+	protected Integer predictedHomeScore;
 
-	private Integer predictedAwayScore;
+	protected Integer predictedAwayScore;
 
-	private NFLTeam atsWinner;
+	protected NFLTeam atsWinner;
 
-	private BigDecimal atsMargin;
+	protected BigDecimal atsMargin;
 
-	public Prediction(Matchup matchup)
+	public SimplePrediction(Matchup matchup)
 	{
 		this.matchup = matchup;
 		calculate();
@@ -50,7 +49,7 @@ public class Prediction
 		return atsMargin;
 	}
 
-	private void calculate()
+	protected void calculate()
 	{
 		this.predictedHomeScore = getHomeScore();
 		this.predictedAwayScore = getAwayScore();
@@ -84,7 +83,7 @@ public class Prediction
 		atsMargin = diff;
 	}
 
-	private Integer getHomeScore()
+	protected Integer getHomeScore()
 	{
 		Integer h2hScored = matchup.getHomeHead2HeadPtsScored();
 		Integer sPtsScored3 = matchup.getHomeSituationalPtsScoredLast3();
@@ -100,7 +99,7 @@ public class Prediction
 		return Math.abs(((avgPtsScored + avgPtsAllowed) / 2));
 	}
 
-	private Integer getAwayScore()
+	protected Integer getAwayScore()
 	{
 		Integer h2hScored = matchup.getAwayHead2HeadPtsScored();
 		Integer sPtsScored3 = matchup.getAwaySituationalPtsScoredLast3();

@@ -1,0 +1,16 @@
+WAS(16) @ ARI(23)  12.5  Winner ATS: ARI  19.5
+HOU(13) @ NE (29)  -1.5  Winner ATS: NE   14.5
+NYJ(13) @ DET(20)   5.5  Winner ATS: DET  12.5
+CIN(18) @ IND(21)   5.5  Winner ATS: IND   8.5
+BUF(17) @ BAL(24)   0.5  Winner ATS: BAL   7.5
+SF (15) @ MIN(21)   0.5  Winner ATS: MIN   6.5
+KC (18) @ LAC(22)  -7.5  Winner ATS: KC    3.5
+DAL(19) @ CAR(17)   5.5  Winner ATS: CAR   3.5
+SEA(19) @ DEN(21)  -5.5  Winner ATS: SEA   3.5
+CHI(19) @ GB (16)  -0.5  Winner ATS: GB    3.5
+PIT(25) @ CLE(14)   8.5  Winner ATS: PIT   2.5
+ATL(16) @ PHI(21)  -3.5  Winner ATS: PHI   1.5
+TEN(20) @ MIA(19)   2.5  Winner ATS: TEN   1.5
+TB (18) @ NO (25)  -8.5  Winner ATS: TB    1.5
+JAC(23) @ NYG(20)   2.5  Winner ATS: JAC   0.5
+LAR(20) @ OAK(14)   5.5  Winner ATS: OAK   0.5

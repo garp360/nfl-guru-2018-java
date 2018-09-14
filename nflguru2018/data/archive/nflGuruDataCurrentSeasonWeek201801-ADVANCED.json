@@ -13,13 +13,13 @@
       "second": 0,
       "nano": 0
     },
-    "homeScore": -1,
-    "awayScore": -1,
+    "homeScore": 18,
+    "awayScore": 12,
     "game": 1,
     "week": 1,
     "season": 2018,
-    "homeSpread": -2.5,
-    "awaySpread": 2.5,
+    "homeSpread": -3.5,
+    "awaySpread": -5.5,
     "head2HeadGamesPlayed": 3,
     "homeHead2HeadPtsScored": 24,
     "awayHead2HeadPtsScored": 20,
@@ -46,7 +46,9 @@
     "homeOverallPtsAllowedLast3": 17,
     "awayOverallPtsAllowedLast10": 19,
     "awayOverallPtsAllowedLast5": 18,
-    "awayOverallPtsAllowedLast3": 19
+    "awayOverallPtsAllowedLast3": 19,
+    "masseyPredictionHomePtsScored": 27,
+    "masseyPredictionAwayPtsScored": 21
   },
   {
     "home": "BAL",
@@ -62,12 +64,12 @@
       "second": 0,
       "nano": 0
     },
-    "homeScore": -1,
-    "awayScore": -1,
+    "homeScore": 47,
+    "awayScore": 3,
     "game": 2,
     "week": 1,
     "season": 2018,
-    "homeSpread": -7.5,
+    "homeSpread": 0.5,
     "awaySpread": 7.5,
     "head2HeadGamesPlayed": 1,
     "homeHead2HeadPtsScored": 13,
@@ -95,7 +97,9 @@
     "homeOverallPtsAllowedLast3": 19,
     "awayOverallPtsAllowedLast10": 24,
     "awayOverallPtsAllowedLast5": 27,
-    "awayOverallPtsAllowedLast3": 24
+    "awayOverallPtsAllowedLast3": 24,
+    "masseyPredictionHomePtsScored": 23,
+    "masseyPredictionAwayPtsScored": 19
   },
   {
     "home": "CLE",
@@ -116,7 +120,7 @@
     "game": 3,
     "week": 1,
     "season": 2018,
-    "homeSpread": 5.5,
+    "homeSpread": 8.5,
     "awaySpread": -5.5,
     "head2HeadGamesPlayed": 8,
     "homeHead2HeadPtsScored": 14,
@@ -144,7 +148,9 @@
     "homeOverallPtsAllowedLast3": 24,
     "awayOverallPtsAllowedLast10": 18,
     "awayOverallPtsAllowedLast5": 20,
-    "awayOverallPtsAllowedLast3": 22
+    "awayOverallPtsAllowedLast3": 22,
+    "masseyPredictionHomePtsScored": 14,
+    "masseyPredictionAwayPtsScored": 27
   },
   {
     "home": "IND",
@@ -160,13 +166,13 @@
       "second": 0,
       "nano": 0
     },
-    "homeScore": -1,
-    "awayScore": -1,
+    "homeScore": 23,
+    "awayScore": 34,
     "game": 4,
     "week": 1,
     "season": 2018,
-    "homeSpread": -2.5,
-    "awaySpread": 2.5,
+    "homeSpread": 5.5,
+    "awaySpread": -0.5,
     "head2HeadGamesPlayed": 2,
     "homeHead2HeadPtsScored": 25,
     "awayHead2HeadPtsScored": 8,
@@ -193,7 +199,9 @@
     "homeOverallPtsAllowedLast3": 20,
     "awayOverallPtsAllowedLast10": 19,
     "awayOverallPtsAllowedLast5": 23,
-    "awayOverallPtsAllowedLast3": 25
+    "awayOverallPtsAllowedLast3": 25,
+    "masseyPredictionHomePtsScored": 17,
+    "masseyPredictionAwayPtsScored": 20
   },
   {
     "home": "MIA",
@@ -209,13 +217,13 @@
       "second": 0,
       "nano": 0
     },
-    "homeScore": -1,
-    "awayScore": -1,
+    "homeScore": 27,
+    "awayScore": 20,
     "game": 5,
     "week": 1,
     "season": 2018,
-    "homeSpread": 1.5,
-    "awaySpread": -1.5,
+    "homeSpread": 2.5,
+    "awaySpread": -0.5,
     "head2HeadGamesPlayed": 4,
     "homeHead2HeadPtsScored": 16,
     "awayHead2HeadPtsScored": 23,
@@ -242,7 +250,9 @@
     "homeOverallPtsAllowedLast3": 23,
     "awayOverallPtsAllowedLast10": 22,
     "awayOverallPtsAllowedLast5": 19,
-    "awayOverallPtsAllowedLast3": 17
+    "awayOverallPtsAllowedLast3": 17,
+    "masseyPredictionHomePtsScored": 20,
+    "masseyPredictionAwayPtsScored": 23
   },
   {
     "home": "MIN",
@@ -258,13 +268,13 @@
       "second": 0,
       "nano": 0
     },
-    "homeScore": -1,
-    "awayScore": -1,
+    "homeScore": 24,
+    "awayScore": 16,
     "game": 6,
     "week": 1,
     "season": 2018,
-    "homeSpread": -6.5,
-    "awaySpread": 6.5,
+    "homeSpread": 0.5,
+    "awaySpread": -5.5,
     "head2HeadGamesPlayed": 1,
     "homeHead2HeadPtsScored": 24,
     "awayHead2HeadPtsScored": 13,
@@ -291,7 +301,9 @@
     "homeOverallPtsAllowedLast3": 10,
     "awayOverallPtsAllowedLast10": 25,
     "awayOverallPtsAllowedLast5": 22,
-    "awayOverallPtsAllowedLast3": 20
+    "awayOverallPtsAllowedLast3": 20,
+    "masseyPredictionHomePtsScored": 22,
+    "masseyPredictionAwayPtsScored": 26
   },
   {
     "home": "NE",
@@ -307,13 +319,13 @@
       "second": 0,
       "nano": 0
     },
-    "homeScore": -1,
-    "awayScore": -1,
+    "homeScore": 27,
+    "awayScore": 20,
     "game": 7,
     "week": 1,
     "season": 2018,
-    "homeSpread": -6.5,
-    "awaySpread": 6.5,
+    "homeSpread": -1.5,
+    "awaySpread": 0.5,
     "head2HeadGamesPlayed": 3,
     "homeHead2HeadPtsScored": 35,
     "awayHead2HeadPtsScored": 15,
@@ -340,7 +352,9 @@
     "homeOverallPtsAllowedLast3": 15,
     "awayOverallPtsAllowedLast10": 25,
     "awayOverallPtsAllowedLast5": 26,
-    "awayOverallPtsAllowedLast3": 28
+    "awayOverallPtsAllowedLast3": 28,
+    "masseyPredictionHomePtsScored": 24,
+    "masseyPredictionAwayPtsScored": 17
   },
   {
     "home": "NO",
@@ -356,13 +370,13 @@
       "second": 0,
       "nano": 0
     },
-    "homeScore": -1,
-    "awayScore": -1,
+    "homeScore": 40,
+    "awayScore": 48,
     "game": 8,
     "week": 1,
     "season": 2018,
-    "homeSpread": -9.5,
-    "awaySpread": 9.5,
+    "homeSpread": -8.5,
+    "awaySpread": 3.5,
     "head2HeadGamesPlayed": 7,
     "homeHead2HeadPtsScored": 29,
     "awayHead2HeadPtsScored": 16,
@@ -389,7 +403,9 @@
     "homeOverallPtsAllowedLast3": 21,
     "awayOverallPtsAllowedLast10": 23,
     "awayOverallPtsAllowedLast5": 23,
-    "awayOverallPtsAllowedLast3": 24
+    "awayOverallPtsAllowedLast3": 24,
+    "masseyPredictionHomePtsScored": 31,
+    "masseyPredictionAwayPtsScored": 23
   },
   {
     "home": "NYG",
@@ -405,13 +421,13 @@
       "second": 0,
       "nano": 0
     },
-    "homeScore": -1,
-    "awayScore": -1,
+    "homeScore": 15,
+    "awayScore": 20,
     "game": 9,
     "week": 1,
     "season": 2018,
-    "homeSpread": 3.5,
-    "awaySpread": -3.5,
+    "homeSpread": 2.5,
+    "awaySpread": 1.5,
     "head2HeadGamesPlayed": 1,
     "homeHead2HeadPtsScored": 24,
     "awayHead2HeadPtsScored": 20,
@@ -438,7 +454,9 @@
     "homeOverallPtsAllowedLast3": 23,
     "awayOverallPtsAllowedLast10": 18,
     "awayOverallPtsAllowedLast5": 16,
-    "awayOverallPtsAllowedLast3": 21
+    "awayOverallPtsAllowedLast3": 21,
+    "masseyPredictionHomePtsScored": 13,
+    "masseyPredictionAwayPtsScored": 21
   },
   {
     "home": "LAC",
@@ -454,13 +472,13 @@
       "second": 0,
       "nano": 0
     },
-    "homeScore": -1,
-    "awayScore": -1,
+    "homeScore": 28,
+    "awayScore": 38,
     "game": 10,
     "week": 1,
     "season": 2018,
-    "homeSpread": -3.5,
-    "awaySpread": 3.5,
+    "homeSpread": -7.5,
+    "awaySpread": 5.5,
     "head2HeadGamesPlayed": 1,
     "homeHead2HeadPtsScored": 10,
     "awayHead2HeadPtsScored": 24,
@@ -487,7 +505,9 @@
     "homeOverallPtsAllowedLast3": 12,
     "awayOverallPtsAllowedLast10": 21,
     "awayOverallPtsAllowedLast5": 23,
-    "awayOverallPtsAllowedLast3": 21
+    "awayOverallPtsAllowedLast3": 21,
+    "masseyPredictionHomePtsScored": 21,
+    "masseyPredictionAwayPtsScored": 24
   },
   {
     "home": "ARI",
@@ -503,13 +523,13 @@
       "second": 0,
       "nano": 0
     },
-    "homeScore": -1,
-    "awayScore": -1,
+    "homeScore": 6,
+    "awayScore": 24,
     "game": 11,
     "week": 1,
     "season": 2018,
-    "homeSpread": -0.5,
-    "awaySpread": 0.5,
+    "homeSpread": 12.5,
+    "awaySpread": -5.5,
     "head2HeadGamesPlayed": 2,
     "homeHead2HeadPtsScored": 30,
     "awayHead2HeadPtsScored": 21,
@@ -536,7 +556,9 @@
     "homeOverallPtsAllowedLast3": 19,
     "awayOverallPtsAllowedLast10": 23,
     "awayOverallPtsAllowedLast5": 24,
-    "awayOverallPtsAllowedLast3": 20
+    "awayOverallPtsAllowedLast3": 20,
+    "masseyPredictionHomePtsScored": 17,
+    "masseyPredictionAwayPtsScored": 27
   },
   {
     "home": "CAR",
@@ -552,13 +574,13 @@
       "second": 0,
       "nano": 0
     },
-    "homeScore": -1,
-    "awayScore": -1,
+    "homeScore": 16,
+    "awayScore": 8,
     "game": 12,
     "week": 1,
     "season": 2018,
-    "homeSpread": -2.5,
-    "awaySpread": 2.5,
+    "homeSpread": 5.5,
+    "awaySpread": -2.5,
     "head2HeadGamesPlayed": 1,
     "homeHead2HeadPtsScored": 14,
     "awayHead2HeadPtsScored": 19,
@@ -585,7 +607,9 @@
     "homeOverallPtsAllowedLast3": 24,
     "awayOverallPtsAllowedLast10": 20,
     "awayOverallPtsAllowedLast5": 19,
-    "awayOverallPtsAllowedLast3": 15
+    "awayOverallPtsAllowedLast3": 15,
+    "masseyPredictionHomePtsScored": 17,
+    "masseyPredictionAwayPtsScored": 21
   },
   {
     "home": "DEN",
@@ -601,13 +625,13 @@
       "second": 0,
       "nano": 0
     },
-    "homeScore": -1,
-    "awayScore": -1,
+    "homeScore": 27,
+    "awayScore": 24,
     "game": 13,
     "week": 1,
     "season": 2018,
-    "homeSpread": -2.5,
-    "awaySpread": 2.5,
+    "homeSpread": -5.5,
+    "awaySpread": 3.5,
     "head2HeadGamesPlayed": 1,
     "homeHead2HeadPtsScored": 31,
     "awayHead2HeadPtsScored": 14,
@@ -634,7 +658,9 @@
     "homeOverallPtsAllowedLast3": 20,
     "awayOverallPtsAllowedLast10": 21,
     "awayOverallPtsAllowedLast5": 20,
-    "awayOverallPtsAllowedLast3": 22
+    "awayOverallPtsAllowedLast3": 22,
+    "masseyPredictionHomePtsScored": 20,
+    "masseyPredictionAwayPtsScored": 20
   },
   {
     "home": "GB",
@@ -650,13 +676,13 @@
       "second": 0,
       "nano": 0
     },
-    "homeScore": -1,
-    "awayScore": -1,
+    "homeScore": 24,
+    "awayScore": 23,
     "game": 14,
     "week": 1,
     "season": 2018,
-    "homeSpread": -7.5,
-    "awaySpread": 7.5,
+    "homeSpread": -0.5,
+    "awaySpread": -3.5,
     "head2HeadGamesPlayed": 8,
     "homeHead2HeadPtsScored": 27,
     "awayHead2HeadPtsScored": 14,
@@ -683,7 +709,9 @@
     "homeOverallPtsAllowedLast3": 27,
     "awayOverallPtsAllowedLast10": 21,
     "awayOverallPtsAllowedLast5": 17,
-    "awayOverallPtsAllowedLast3": 15
+    "awayOverallPtsAllowedLast3": 15,
+    "masseyPredictionHomePtsScored": 17,
+    "masseyPredictionAwayPtsScored": 17
   },
   {
     "home": "DET",
@@ -699,13 +727,13 @@
       "second": 0,
       "nano": 0
     },
-    "homeScore": -1,
-    "awayScore": -1,
+    "homeScore": 17,
+    "awayScore": 48,
     "game": 15,
     "week": 1,
     "season": 2018,
-    "homeSpread": -6.5,
-    "awaySpread": 6.5,
+    "homeSpread": 5.5,
+    "awaySpread": -2.5,
     "head2HeadGamesPlayed": 0,
     "homeHead2HeadPtsScored": 0,
     "awayHead2HeadPtsScored": 0,
@@ -732,7 +760,9 @@
     "homeOverallPtsAllowedLast3": 23,
     "awayOverallPtsAllowedLast10": 25,
     "awayOverallPtsAllowedLast5": 25,
-    "awayOverallPtsAllowedLast3": 26
+    "awayOverallPtsAllowedLast3": 26,
+    "masseyPredictionHomePtsScored": 25,
+    "masseyPredictionAwayPtsScored": 23
   },
   {
     "home": "OAK",
@@ -748,13 +778,13 @@
       "second": 0,
       "nano": 0
     },
-    "homeScore": -1,
-    "awayScore": -1,
+    "homeScore": 13,
+    "awayScore": 33,
     "game": 16,
     "week": 1,
     "season": 2018,
-    "homeSpread": 4.5,
-    "awaySpread": -4.5,
+    "homeSpread": 5.5,
+    "awaySpread": -12.5,
     "head2HeadGamesPlayed": 0,
     "homeHead2HeadPtsScored": 0,
     "awayHead2HeadPtsScored": 0,
@@ -781,6 +811,8 @@
     "homeOverallPtsAllowedLast3": 21,
     "awayOverallPtsAllowedLast10": 22,
     "awayOverallPtsAllowedLast5": 19,
-    "awayOverallPtsAllowedLast3": 23
+    "awayOverallPtsAllowedLast3": 23,
+    "masseyPredictionHomePtsScored": 17,
+    "masseyPredictionAwayPtsScored": 24
   }
 ]

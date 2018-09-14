@@ -6,8 +6,6 @@ import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
 
-import org.apache.commons.lang3.StringUtils;
-
 import com.gargoylesoftware.htmlunit.WebClient;
 import com.gargoylesoftware.htmlunit.html.HtmlElement;
 import com.gargoylesoftware.htmlunit.html.HtmlForm;
@@ -20,7 +18,6 @@ import hb.nflguru.utils.NFLTeam;
 
 public class CurrentSpreadsImporter
 {
-
 	public CurrentSpreadsImporter()
 	{
 		super();
@@ -56,8 +53,6 @@ public class CurrentSpreadsImporter
 				} catch( Exception e) {
 					spread = BigDecimal.ZERO;
 				}
-				
-				
 				
 				if(operand != null && operand.equalsIgnoreCase("-")) {
 					spread = spread.negate();

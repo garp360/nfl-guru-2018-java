@@ -17,31 +17,22 @@ import hb.nflguru.utils.ScheduleUtils;
 
 public class CurrentSeasonResultsImporter extends BaseImporter
 {
-
-	// http://www.nfl.com/ajax/scorestrip?season=2011&seasonType=REG&week=2
-
+	protected MasseyPredictionsImporter masseyPredictionsImporter = new MasseyPredictionsImporter();
+	protected String historicalDataFilePath = "/Users/garthpidcock/git/nflguru2018/nflguru2018/data/nflGuruDataArchive%s.json";
 	public CurrentSeasonResultsImporter()
 	{
 		initialize();
-
-	}
-
-	public List<Matchup> importResults()
-	{
-		List<Matchup> matchups = getMatchups(ScheduleUtils.getCurrentSeason());
-
-		String output = gson.toJson(matchups);
-		System.out.println(output);
-		return matchups;
 	}
 
 	public List<Matchup> importResults(String outputFilePath)
 	{
+		Map<String, Integer> masseyPredictions = masseyPredictionsImporter.importResults();
 		CurrentSpreadsImporter currentSpreadsImporter = new CurrentSpreadsImporter();
-		DataLoader dataLoader = new DataLoader("/Users/garthpidcock/git/nflguru2018/nflguru2018/data/nflGuruDataArchive.json");
+		String filePath = String.format(historicalDataFilePath, ScheduleUtils.getSuffix());
+		DataLoader dataLoader = new DataLoader(filePath);
 
 		Map<String, BigDecimal> spreads = currentSpreadsImporter.getSpreads();
-		List<Matchup> matchups = getMatchups(ScheduleUtils.getCurrentSeason());
+		List<Matchup> matchups = getMatchupsForCurrentWeek( );
 
 		for (Matchup matchup : matchups)
 		{
@@ -82,6 +73,9 @@ public class CurrentSeasonResultsImporter extends BaseImporter
 			matchup.setAwayOverallPtsAllowedLast10(dataLoader.getOverallPtsAllowed(away, 10L));
 			matchup.setAwayOverallPtsAllowedLast5(dataLoader.getOverallPtsAllowed(away, 5L));
 			matchup.setAwayOverallPtsAllowedLast3(dataLoader.getOverallPtsAllowed(away, 3L));
+			
+			matchup.setMasseyPredictionHomePtsScored(masseyPredictions.get(matchup.getHome().name()));
+			matchup.setMasseyPredictionAwayPtsScored(masseyPredictions.get(matchup.getAway().name()));
 		}
 
 		String output = gson.toJson(matchups);

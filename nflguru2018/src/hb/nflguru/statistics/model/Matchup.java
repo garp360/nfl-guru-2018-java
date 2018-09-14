@@ -68,6 +68,8 @@ public class Matchup
 	private Integer awayOverallPtsAllowedLast5;
 	private Integer awayOverallPtsAllowedLast3;
 	
+	private Integer masseyPredictionHomePtsScored;
+	private Integer masseyPredictionAwayPtsScored;
 	
 	public NFLTeam getHome()
 	{
@@ -447,6 +449,26 @@ public class Matchup
 	public void setAwayOverallPtsAllowedLast3(Integer awayOverallPtsAllowedLast3)
 	{
 		this.awayOverallPtsAllowedLast3 = awayOverallPtsAllowedLast3;
+	}
+	
+	public Integer getMasseyPredictionHomePtsScored()
+	{
+		return masseyPredictionHomePtsScored;
+	}
+
+	public void setMasseyPredictionHomePtsScored(Integer masseyPredictionHomePtsScored)
+	{
+		this.masseyPredictionHomePtsScored = masseyPredictionHomePtsScored;
+	}
+
+	public Integer getMasseyPredictionAwayPtsScored()
+	{
+		return masseyPredictionAwayPtsScored;
+	}
+
+	public void setMasseyPredictionAwayPtsScored(Integer masseyPredictionAwayPtsScored)
+	{
+		this.masseyPredictionAwayPtsScored = masseyPredictionAwayPtsScored;
 	}
 
 	@Override

@@ -21,6 +21,7 @@ public class DataLoader
 
 	public DataLoader(String filepath)
 	{
+		System.out.println("Loading data from '" + filepath + "' ...");
 		try
 		{
 			String data = new String(Files.readAllBytes(Paths.get(filepath)));
@@ -37,7 +38,7 @@ public class DataLoader
 			e.printStackTrace();
 		}
 		
-		System.out.println(games.size());
+		System.out.println("Games loaded = " + games.size());
 	}
 
 	public Integer getSituationalHeadToHeadGamesPlayed(String home, String away)
